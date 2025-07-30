@@ -1,11 +1,24 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Button, Text, View } from 'react-native'
 import { styles } from '../theme/appTheme'
+import { StackScreenProps } from '@react-navigation/stack'
+import { RootStackParams } from '../navigator/StackNavigation'
 
-export const Pantalla3Screen = () => {
+type Props = StackScreenProps<RootStackParams, 'Pantalla3'>
+
+export const Pantalla3Screen = ({ navigation }: Props) => {
+
     return (
         <View style={styles.container}>
-            <Text>Pantalla3 Screen</Text>
+            <Text style={styles.title}>Pantalla3 Screen</Text>
+            <Button
+                title="Regresar"
+                onPress={() => navigation.goBack()} />
+                <View style={styles.btn}>
+            <Button
+                title="Ir a home"
+                onPress={() => navigation.popToTop()} /> 
+                </View>
         </View>
     )
 }
