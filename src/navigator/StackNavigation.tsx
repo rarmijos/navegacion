@@ -31,11 +31,11 @@ export const StackNavigation = () => {
                 backgroundColor: 'purple',
             }
         }}>
-            <Stack.Screen name="Pantalla1" options={{title: 'Home'}} component={Pantalla1Screen} />
-            <Stack.Screen name="Pantalla2" component={Pantalla2Screen} />
-            <Stack.Screen name="Pantalla3" component={Pantalla3Screen} />
-            <Stack.Screen name="Persona" component={PersonaScreen} />
-            <Stack.Screen name="Persona2" component={Persona2Screen} />
+            <Stack.Screen name="Pantalla1" options={{title: 'Home', headerShown: false}} component={Pantalla1Screen} />
+            <Stack.Screen name="Pantalla2" options={{title: 'Home', headerShown: false}} component={Pantalla2Screen} />
+            <Stack.Screen name="Pantalla3" options={{title: 'Home', headerShown: false}} component={Pantalla3Screen} />
+            <Stack.Screen name="Persona" options={{title: 'Home', headerShown: false}} component={PersonaScreen} />
+            <Stack.Screen name="Persona2" options={{title: 'Home', headerShown: false}} component={Persona2Screen} />
         </Stack.Navigator>
     );
 }

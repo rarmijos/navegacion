@@ -40,7 +40,7 @@ export const Pantalla1Screen = ({navigation}: Props) => {
                 onPress={() => navigation.navigate('Pantalla2')}/>
 
                 <Text style={styles.text}>Navegar con argumentos a otro screem</Text>
-
+                
                 <TouchableOpacity
                 onPress={() => navigation.navigate('Persona', persona)}>
                     <Text style={styles.btn2}>Persona 1</Text>

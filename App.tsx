@@ -1,12 +1,16 @@
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import { Text, View } from 'react-native';
-import { StackNavigation } from './src/navigator/StackNavigation';
+// import { Text, View } from 'react-native';
+// import { StackNavigation } from './src/navigator/StackNavigation';
+// import { DrawerNavigation } from './src/navigator/DrawerNavigation';
+import { DrawerNavigationPerzonalizado } from './src/navigator/DrawerNavigationPersonalizado';
 
 const App = () => {
   return (
     <NavigationContainer>
-      <StackNavigation />
+      {/* <StackNavigation /> */}
+      {/* <DrawerNavigation /> */}
+      <DrawerNavigationPerzonalizado />
     </NavigationContainer>
   )
 }
